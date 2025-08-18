@@ -2,10 +2,10 @@ package dev.InovaXtech.CadastroDeNinjas;
 
 public class NinjaModel {
 	
-	long id;
-	String Nome;
-	String email;
-	int idade;
+	private long id;
+	private String Nome;
+	private String email;
+	private int idade;
 	
 	public NinjaModel() {
 		
@@ -40,6 +40,14 @@ public class NinjaModel {
 
 	public void setIdade(int idade) {
 		this.idade = idade;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
 	}
 	
 	
