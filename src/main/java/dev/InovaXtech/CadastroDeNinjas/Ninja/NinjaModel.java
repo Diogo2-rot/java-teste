@@ -1,11 +1,27 @@
-package dev.InovaXtech.CadastroDeNinjas;
+package dev.InovaXtech.CadastroDeNinjas.Ninja;
+
+import java.util.List;
+
+import dev.InovaXtech.CadastroDeNinjas.missoes.missoes;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
 public class NinjaModel {
 	
 	private long id;
+	
 	private String Nome;
+	
 	private String email;
+	
 	private int idade;
+	
+	//manytoone um ninja tem uma unica missao
+	@ManyToOne
+	@JoinColumn(name = "missoes_id")
+	
+	private missoes Missoes;
+	
 	
 	public NinjaModel() {
 		
