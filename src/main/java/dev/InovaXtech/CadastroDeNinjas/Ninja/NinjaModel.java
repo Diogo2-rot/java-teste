@@ -2,6 +2,7 @@ package dev.InovaXtech.CadastroDeNinjas.Ninja;
 
 import java.util.List;
 import dev.InovaXtech.CadastroDeNinjas.missoes.missoes;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -27,6 +28,7 @@ public class NinjaModel {
 	
 	private String Nome;
 	
+	@Column(unique = true)
 	private String email;
 	
 	private int idade;
