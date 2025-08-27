@@ -34,12 +34,12 @@ public class NinjaModel {
 	@Column(unique = true)
 	private String email;
 	
-	@Column(name = "id")
+	@Column(name = "idade")
 	private int idade;
 	
 	//manytoone um ninja tem uma unica missao
 	@ManyToOne
-	@JoinColumn(name = "missoes_id")
+	@JoinColumn(name = "Missoes_id")
 	
 	private missoes Missoes;
 	
