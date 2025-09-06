@@ -1,6 +1,8 @@
 package dev.InovaXtech.CadastroDeNinjas.Ninja;
 
-import java.util.List;
+
+import org.springframework.web.bind.annotation.RestController;
+
 import dev.InovaXtech.CadastroDeNinjas.missoes.missoes;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
